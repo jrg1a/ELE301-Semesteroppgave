@@ -60,7 +60,7 @@ namespace Adgangskontroll
                 if (harForbindelse)
                 {
                     Console.WriteLine(dataFraKlient);
-                    dataTilKlient = ReverserTekst(dataFraKlient);
+                    dataTilKlient = dataFraKlient; //gammel funksjon, skal fjernes senere
                     SendData(minSokkel, dataTilKlient, out harForbindelse);
                 }
             }
